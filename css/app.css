@@ -1,3 +1,8 @@
+:root {
+  /* ------ color ------ */
+  --orange-primary: #e76f51;
+}
+
 html {
   box-sizing: border-box;
   /* font-size: 10px; */
@@ -29,3 +34,94 @@ a {
 /*
 * app style
 */
+.header {
+  background: linear-gradient(rgba(59, 55, 53, 0.5), rgba(59, 55, 53, 0.5)),
+    url("../assets/images/header-bg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.app-logo {
+}
+
+.app-logo__img {
+}
+
+.menu {
+  display: none;
+}
+
+.menu__item {
+}
+
+.menu__link {
+}
+
+.nav-menu {
+  display: none;
+}
+
+.mobile-menu {
+}
+.mobile-menu__item {
+}
+
+.mobile-menu__link {
+}
+
+.nav-menu__links {
+}
+
+.nav-menu__link {
+}
+
+.header__links {
+  display: none;
+}
+
+.header__link {
+}
+
+.header__link--border {
+}
+
+.nav__btn {
+  background-color: #fff;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.nav__btn-line {
+  background-color: var(--orange-primary);
+  display: block;
+  width: 2.5rem;
+  height: 0.3rem;
+  border-radius: 1rem;
+  position: relative;
+}
+.nav__btn-line::before,
+.nav__btn-line::after {
+  content: " ";
+  background-color: var(--orange-primary);
+  position: absolute;
+  width: 2.5rem;
+  height: 0.3rem;
+  border-radius: 1rem;
+}
+.nav__btn-line::before {
+  top: -0.8rem;
+}
+.nav__btn-line::after {
+  top: 0.8rem;
+}
