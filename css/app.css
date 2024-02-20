@@ -109,6 +109,7 @@ a {
   height: 0.3rem;
   border-radius: 1rem;
   position: relative;
+  transition: all 150ms ease-in-out;
 }
 .nav__btn-line::before,
 .nav__btn-line::after {
@@ -118,10 +119,22 @@ a {
   width: 2.5rem;
   height: 0.3rem;
   border-radius: 1rem;
+  transition: all 200ms ease-in-out;
 }
 .nav__btn-line::before {
   top: -0.8rem;
 }
 .nav__btn-line::after {
   top: 0.8rem;
+}
+
+.nav__btn--open .nav__btn-line {
+  background-color: transparent;
+}
+
+.nav__btn--open .nav__btn-line::before {
+  transform: translateY(8px) rotate(45deg);
+}
+.nav__btn--open .nav__btn-line::after {
+  transform: translateY(-8px) rotate(-45deg);
 }
