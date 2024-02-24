@@ -1,11 +1,19 @@
 /*
 * media query
 */
+
+@media (max-width: 380px) {
+  .header-content__title {
+    font-size: 4rem;
+  }
+}
+
 @media (min-width: 576px) {
 }
 
 @media (min-width: 768px) {
-  .nav__btn {
+  .nav__btn,
+  .nav-menu {
     display: none;
   }
   .menu {
@@ -16,6 +24,9 @@
 @media (min-width: 992px) {
   .nav__links {
     display: block;
+  }
+  .header-content__caption {
+    max-width: 50rem;
   }
 }
 
