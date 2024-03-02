@@ -2,6 +2,7 @@
   /* ---- color ---- */
   --background-app: #fdf0eb;
   --orange-primary: #e76f51;
+  --orange-secondary: #f8e1db;
   --white-cl: #fff;
   --grey-cl: #d2d2d2;
   --dark: #3b3735;
@@ -49,7 +50,6 @@ Component
 =======
 */
 .btn {
-  display: block;
   background-color: var(--dark);
   color: var(--white-cl);
   width: 18rem;
@@ -439,6 +439,7 @@ destinations
 
 */
 .destinations {
+  color: var(--dark);
   text-align: center;
   padding: 6rem 0;
 }
@@ -500,8 +501,6 @@ destinations
   cursor: pointer;
 }
 
-.place__like-icon {
-}
 .place__like-icon--fill {
   fill: var(--orange-primary);
 }
@@ -557,4 +556,57 @@ destinations
 .destinations__btn:hover {
   background-color: var(--orange-primary);
   color: var(--background-app);
+}
+
+/*
+
+=================
+Newsletter
+=================
+
+*/
+.newsletter {
+  background-color: var(--orange-secondary);
+  color: var(--dark);
+  border-radius: 2rem;
+  text-align: center;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.newsletter__content {
+}
+
+.newsletter__title {
+  font-family: var(--secondary-font);
+  font-size: 3rem;
+  max-width: 16rem;
+  margin: 1.5rem auto;
+}
+
+.newsletter__caption {
+  font-family: var(--primary-font-md);
+}
+
+.newsletter__email-box {
+}
+
+.newsletter__email-icon {
+}
+
+.newsletter__input {
+}
+
+.newsletter__submit {
+}
+
+.newsletter__submit-send {
+}
+
+.newsletter__banner {
+}
+
+.newsletter__img {
+  width: 100%;
 }
